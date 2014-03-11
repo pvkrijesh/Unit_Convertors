@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YourTimer</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript" src="convert.js"></script>
+    </head>
+   <body>
+<div data-role="page" data-theme="a">
+<div data-role="header" style="overflow:hidden;" data-theme="a">
+    <h1>Unit Converter</h1>
+    <a href="#" data-icon="gear" class="ui-btn-right" data-theme="a" id="reset">Reset</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" id="length" class="ui-btn-active">Length</a></li>
+            <li><a href="#" id="Temperature">Temperature</a></li>
+            <li><a href="#" id="Weight">Weight</a></li>
+            <li><a href="#" id="Time">Time</a></li>
+             <li><a href="#" id="Area">Area</a></li>
+             <li><a href="#" id="Volume">Volume</a></li>
+        </ul>
+    </div>
+</div>
+<div data-role="content">
+<div style="height: 90%;border: thick;">
+
+</div>
+<table>
+	<tr><td>
+			<input type="number" id="from" autofocus="autofocus" placeholder="From"></td>
+			<td><select id="unitFrom">
+				<option data-placeholder="true" value="toOption">Unit From</option>
+			</select>
+			</td>
+	</tr>
+	<tr>
+	<td><input type="number" id="to" autofocus="autofocus" placeholder="To" disabled="disabled"></td>
+		<td><select id="unitTo">
+		<option data-placeholder="true" value="toOption">Unit To</option>
+		</select>
+	</td>
+	</tr>
+</table> 
+	<button id="convert">Convert</button>
+	
+	<div id="convertResult" style="font-family: cursive;font-size: 24px; font-style: italic">
+	</div>
+ </div>
+  </div>
+  
+    </body>
+</html>
+
